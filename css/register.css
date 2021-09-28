@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.3), rgba(163, 141, 158, 0.1)), url("../images/covid-19.jpg") fixed no-repeat;
+    background-size: cover;
+}
+
+.form-control:valid {
+    background-color: #78e08f;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(180, 180, 180);
+    opacity: 1;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: #000;
+    opacity: 0.5;
+}
+
+
+/* Firefox < 19 */
+
+input:-moz-placeholder {
+    color: rgb(180, 180, 180);
+    opacity: 1;
+}
+
+input:focus:-moz-placeholder {
+    color: #000;
+    opacity: 0.5;
+}
+
+
+/* Firefox > 19 */
+
+input::-moz-placeholder {
+    color: rgb(180, 180, 180);
+    opacity: 1;
+}
+
+input:focus::-moz-placeholder {
+    color: #000;
+    opacity: 0.5;
+}
+
+
+/* Internet Explorer 10 */
+
+input:-ms-input-placeholder {
+    color: rgb(180, 180, 180);
+    opacity: 1;
+}
+
+input:focus:-ms-input-placeholder {
+    color: #000;
+    opacity: 0.5;
+}
+
+.container {
+    width: 400px;
+    height: 570px;
+    background: rgb(68, 68, 73);
+    background: linear-gradient(90deg, rgba(105, 105, 105, 0.8) 5%, rgba(126, 126, 126, 0.8) 14%, rgba(82, 82, 82, 0.8) 100%);
+    border-radius: 20px;
+    float: right;
+    margin: 90px;
+    padding: 10px;
+}
+
+.container h4 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #78e08f;
+    font-size: 35px;
+    font-family: cursive;
+    letter-spacing: 4.3px;
+}
+
+.container form input {
+    width: 90%;
+    margin-top: 13px;
+    margin-left: 30px;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    border: 2px solid #78e08f;
+    border-radius: 5px;
+}
+
+.container form input[type=text]:focus,
+.container form input[type=password]:focus,
+.container form input[type=email]:focus {
+    transition: 0.6s;
+    background-color: #78e08f;
+}
+
+.container form input[type=submit] {
+    padding: 9px;
+    background-color: #78e08f;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container form input[type=submit]:hover {
+    cursor: pointer;
+    transition: 0.8s;
+    background-color: transparent;
+    border-color: #78e08f;
+}
+
+.container p {
+    color: #78e08f;
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.container p a {
+    text-decoration: none;
+    color: #78e08f;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bolder;
+    font-size: 17px;
+    letter-spacing: normal;
+}
+
+.container p a:hover {
+    transition: 0.9s;
+    color: #a7f3b7;
+}
+
+@media(max-width:767px) {
+    body {
+        height: 0%;
+    }
+    .container {
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        float: none;
+    }
+}
+
+@media(min-width:768px) {
+    body {
+        height: 0%;
+    }
+    .container {
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
+        float: none;
+    }
+}
+
+@media(min-width:992px) {
+    body {
+        height: 0%;
+    }
+    .container {
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: 4%;
+        margin-top: 5%;
+        float: right;
+    }
+}
+
+@media(min-width:1200px) {
+    body {
+        height: 0%;
+    }
+    .container {
+        margin-left: auto;
+        margin-right: 6%;
+        margin-top: 5%;
+        float: right;
+    }
+}
